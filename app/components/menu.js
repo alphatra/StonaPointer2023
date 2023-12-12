@@ -1,12 +1,13 @@
 "use client";
 import Link from 'next/link';
-
+import styles from './style.css'
 export function Menu() {
     return (
       <nav className="bg-gray-800 text-white p-4">
-        <ul className="flex space-x-4">
+        <ul className={styles.navbarcontainer}>
+        
           <li>
-            <Link href="/" className="hover:bg-gray-700 px-3 py-2 rounded">
+            <Link href="/" className="hover:bg-gray-700 px-3 py-2 rounded text-lime-500">
               Home
             </Link>
           </li>
@@ -20,10 +21,13 @@ export function Menu() {
               contact
             </Link>
           </li>
-          {/* Możesz dodać więcej linków tutaj */}
+          
         </ul>
       </nav>
     );
   };
   
   export default Menu;
+
+
+  
