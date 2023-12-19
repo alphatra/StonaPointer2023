@@ -1,8 +1,8 @@
 'use client'
-import {Menu} from './components/menu'
-import {Plen} from './components/plen'
-import {Person} from './components/person'
-import {Member} from './components/member'
+import {Menu} from '@/components/ui/menu'
+import {Plen} from '@/components/plen'
+import {Person} from '@/components/person'
+import {Member} from '@/components/member'
 import Image from 'next/image'
 
 export default function Home() {
