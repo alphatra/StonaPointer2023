@@ -4,11 +4,23 @@ import './globals.css'
 const satoshiVariable = localFont({
   src: [
     {
-      path: './assets/fonts/satoshi-variable/Satoshi-Regular.otf',
+      path: '../public/fonts/satoshi-variable/Satoshi-Regular.otf',
       weight: '400',
       style: 'normal',
     },
   ],
+  variable: '--font-satoshiVariable',
+})
+
+const minecraft = localFont({
+  src: [
+    {
+      path: '../public/fonts/minecraft-font/MinecraftRegular-Bmg3.otf',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-minecraft',
 })
 
 export const metadata = {
@@ -19,7 +31,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={satoshiVariable.className}>{children}</body>
+      <body className={`${satoshiVariable.variable} ${minecraft.variable}`}>{children}</body>
     </html>
   )
 }

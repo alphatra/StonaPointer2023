@@ -1,6 +1,4 @@
 "use client";
-import '../styles/fonts.css';
-
 export function Person({name, surname, caption, imageSrc}) {
     const initials = `${name?.[0] || ''}${surname?.[0] || ''}`;
 
@@ -14,8 +12,8 @@ export function Person({name, surname, caption, imageSrc}) {
             )}
         </div>
         <div className="bg-stone-950 text-white p-2 w-1/5 mt-8">
-            <p className="text-xl ml-5" style={{ fontFamily: 'Minecraft' }}>{name} {surname}</p>
-            <p className="text-sm ml-5" style={{ fontFamily: 'Minecraft' }}>// {caption}</p>
+            <p className="text-xl ml-5 font-minecraft">{name} {surname}</p>
+            <p className="text-sm ml-5 font-minecraft">// {caption}</p>
         </div>
         </>
     );
